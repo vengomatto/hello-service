@@ -9,7 +9,7 @@ host: hello-service.localhost
 components:
   app:
     image: ghcr.io/vengomatto/hello-service
-    tag: unreleased
+    tag: 58958fc7acc2c967a500ef6cb71619814110d1a2
     port: 8080
     path: /
     health: /
