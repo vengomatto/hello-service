@@ -4,14 +4,14 @@
 #
 # `tag` is the commit SHA of the image CI built; CI rewrites it in a deploy PR. Never edit it by hand.
 # `unreleased` means no image has been released yet.
-name: __NAME__
-host: __NAME__.localhost
+name: hello-service
+host: hello-service.localhost
 components:
   app:
-    image: __IMAGE__
+    image: ghcr.io/vengomatto/hello-service
     tag: unreleased
-    port: __PORT__
-    path: __PATH__
-    health: __HEALTH__
+    port: 80
+    path: /
+    health: /
 database:
-  enabled: __DATABASE__
+  enabled: false
