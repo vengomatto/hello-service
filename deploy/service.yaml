@@ -10,7 +10,7 @@ components:
   app:
     image: ghcr.io/vengomatto/hello-service
     tag: unreleased
-    port: 80
+    port: 8080
     path: /
     health: /
 database:
